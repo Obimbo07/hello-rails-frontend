@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData, selectData } from '../redux/Message/messageSlice';
 
-function Home() {
+function Greeting() {
   const dispatch = useDispatch();
   const data = useSelector(selectData);
 
@@ -23,4 +23,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Greeting;
