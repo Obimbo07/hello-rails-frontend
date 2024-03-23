@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Greeting from './components/Greeting';
 import './App.css';
@@ -5,7 +6,9 @@ import './App.css';
 function App() {
   return (
     <>
-      <Greeting />
+      <Routes>
+        <Route path="/" element={<Greeting />} />
+      </Routes>
     </>
   );
 }
